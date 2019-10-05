@@ -1,0 +1,15 @@
+小包在程式中寫了父類別CN和子類別HK
+其中CN和HK的Constructor為
+public CN(){
+	System.out.println("LiHaiLeWoDeGuo");
+}
+
+public HK(){
+	super();
+}
+
+則小包運行HK()後的結果為
+(A)編譯失敗
+(B)執行出現錯誤訊息
+(C)沒有輸出
+(D)印出LiHaiLeWoDeGuo

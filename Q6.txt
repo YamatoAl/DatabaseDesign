@@ -1,0 +1,7 @@
+請問Java中多型的拼法為?
+(A)Polymurphism
+(B)Polymursmiph
+(C)Polymorphism
+(D)Polymurthism
+
+答案:C

@@ -1,0 +1,19 @@
+怡慷跟世間兩個人進行打賭
+他們分別在程式碼中加入了hockey及jump_sea
+比賽哪邊寫的變數可以順利通過編譯
+請幫他們預測編譯後的結果
+
+public int hockey=3;
+public static final int jump_sea=1;
+	
+public static void main(String args[]){	
+	hockey=0;
+	jump_sea--;
+}
+
+(A)編譯成功
+(B)只有hockey編譯失敗
+(C)只有jump_sea編譯失敗
+(D)兩個都編譯失敗
+
+答：D

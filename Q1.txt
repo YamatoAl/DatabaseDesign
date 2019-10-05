@@ -1,0 +1,11 @@
+秋意在撰寫程式
+他寫了一個作為父類別的Sunflower以及它的子類別Banana
+但編譯時卻無法成功
+請幫秋意找出是哪一個物件的宣告出現了編譯錯誤
+
+(A)Sunflower s1 = new Banana();
+(B)Banana b1 = new Sunflower();
+(C)Sunflower s2 = (Sunflower) new Banana();
+(D)Banana b2 = (Banana) new Sunflower();
+
+答案:B

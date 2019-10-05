@@ -1,0 +1,24 @@
+小新在程式中建立了父類別SoccerTeam
+以及兩個子類別Brazil和Germany
+
+在SoccerTeam中有一項Function
+public int score(){
+	int i;
+	for(i=0;i<1;i++);
+	return i;
+}
+
+而在Germany中又另外寫了
+public int score(){
+	int i;
+	for(i=0;i<7;i++);
+	return i;
+}
+
+則今天小羅使用brazil.score()和germany.score()時
+兩者分別回傳int為?
+
+(A)0:0
+(B)0:6
+(C)1:1
+(D)1:7

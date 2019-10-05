@@ -1,0 +1,22 @@
+蚊子寫了一個類別
+public class MonthlyPass{
+	private static int price=1680;
+	
+	public MonthlyPass(){
+		price=1280;
+	}
+	
+	public void platform(int price){
+		price=499;
+		System.out.println(this.price);
+	}
+}
+
+請問當蚊子使用platform(0)時
+輸出結果為?
+(A)1280
+(B)1680
+(C)499
+(D)0
+
+答案:A

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+	* {
+		box-sizing: border-box;
+	}
+	
+	.header {
+		background-color: #3030cc;
+		color: #ffffff;
+		padding: 15px;
+	}
+	
+	img { 
+		max-width: 100%;
+		width    : 100%;
+		height   : auto; 
+	}
+	
+	.col-1 {width: 25%;}
+	.col-2 {width: 50%;}
+	.col-3 {width: 75%;}
+	.col-4 {width: 100%;}
+	
+	@media only screen and (max-width: 640px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+	}
+    
+	[class*="col-"] {
+    float: left;
+    padding: 15px;
+    }
+	
+	.footer {
+    background-color: #aaaaaa;
+    color: #000000;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+    }
+	
+	@media only screen and (max-width: 640px) {
+    .header {
+        background-color: #30cc30;
+    }
+}
+</style>
+</head>
+
+<body>
+<div class="header">
+  <h1>火車訂票系統</h1>
+</div>
+
+<img src="TPStation.png" style="display:block;margin:auto">
+
+<div class="col-2">
+<form>
+  姓:<input type="text" name="lastname">
+  <br>
+  名:<input type="text" name="firstname">
+  <br>
+  身分證:<input type="text" name="idNum">
+  <br>
+  特殊障礙需求(非必填):<br>
+  <textarea name="message" rows="5" cols="20">
+  </textarea><br>
+</form>
+</div>
+
+<div class="col-2 right">
+<form>
+  乘車日期:<input type="date" name="Date">
+  <br>
+  時間:<input type="time" name="Time">
+  <br>
+  起始站:<select name="start">
+	<option value="Taipei">台北</option>
+	<option value="Taichung">台中</option>
+	<option value="Kaohsiung">高雄</option>
+  </select><br>
+  終點站:<select name="end">
+	<option value="Taipei">台北</option>
+	<option value="Taichung">台中</option>
+	<option value="Kaohsiung">高雄</option>
+  </select><br>
+  車型:
+  <input type="radio" name="cartype" value="fast">自強
+  <input type="radio" name="cartype" value="slow">區間
+  <input type="radio" name="cartype" value="special">普悠瑪
+  <br>
+  選擇座位類型(普悠瑪限定):<br>
+  <input type="checkbox" name="seat" value="table">桌型座位
+  <input type="checkbox" name="seat" value="normal">一般座位
+  <br>
+  張數 1<input type="range" name="num" min="1" max="5" value="1">5
+  <br>
+  <input type="checkbox" name="meal" value="true">購買便當
+  <br>
+</form>
+</div>
+
+<div class="footer">
+<form>
+  <input type="submit" value="Submit">
+  <input type="reset" value="Reset">
+</form>
+</div>
+<audio controls autoplay loop>
+  <source src="Pascal(Instrumental).mp3" type="audio/mpeg">
+</audio>
+</body>
+</html>
